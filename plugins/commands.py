@@ -210,7 +210,7 @@ async def start(client, message):
                           InlineKeyboardButton("BUTTON NAME", url="https://t.me/updatechannel_forcrime")
                           ]]
                       )
-                chat_id=message.from_user.id,
+                chat_id=message.from_user.id,)
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 )
