@@ -207,9 +207,8 @@ async def start(client, message):
         try:
             msg = await client.send_cached_media(
                       reply_markup= InlineKeyboardMarkup([[
-                          InlineKeyboardButton("BUTTON NAME", url="https://t.me/updatechannel_forcrime")
+                          InlineKeyboardButton("BUTTON NAME", url="https://t.me/updatechannel_forcrime"),
                           ]]
-                          )
                       )
                 chat_id=message.from_user.id,
                 file_id=file_id,
