@@ -359,7 +359,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
             else:
                 buttons = [[
-                    InlineKeyboardButton('Owner', url='https://t.me/pushpa_Reju')
+                    InlineKeyboardButton('🧛𝗢𝘄𝗻𝗲𝗿', url='https://t.me/pushpa_Reju'),
+                    InlineKeyboardButton('📂𝐂𝐡𝐚𝐧𝐧𝐞𝐥📂', url='https://t.me/updatechannel_forcrime')
                 ]]
                 reply_markup = InlineKeyboardMarkup(buttons)
                 await client.send_cached_media(
@@ -400,7 +401,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         await query.answer()
         buttons = [[
-            InlineKeyboardButton('Owner', url='https://t.me/pushpa_Reju')
+            InlineKeyboardButton('🧛𝗢𝘄𝗻𝗲𝗿', url='https://t.me/pushpa_Reju'),
+            InlineKeyboardButton('📂𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/updatechannel_forcrime')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.send_cached_media(
