@@ -242,9 +242,14 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
+    buttons = [[
+        InlineKeyboardButton('Owner', url='https://t.me/pushpa_Reju')
+    ]]
+    reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
+        reply_markup=reply_markup,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         )
