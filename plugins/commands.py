@@ -206,7 +206,7 @@ async def start(client, message):
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         try:
             buttons = [[
-                InlineKeyboardButton('BUTTON NAME', url='https://t.me/crimebhavani4')
+                InlineKeyboardButton('Owner', url='https://t.me/pushpa_Reju')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             msg = await client.send_cached_media(
