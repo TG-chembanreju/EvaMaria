@@ -358,9 +358,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             else:
+                buttons = [[
+                    InlineKeyboardButton('Owner', url='https://t.me/pushpa_Reju')
+                ]]
+                reply_markup = InlineKeyboardMarkup(buttons)
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
                     file_id=file_id,
+                    reply_markup=reply_markup,
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
@@ -394,9 +399,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         await query.answer()
+        buttons = [[
+            InlineKeyboardButton('Owner', url='https://t.me/pushpa_Reju')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
+            reply_markup=reply_markup,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False
         )
