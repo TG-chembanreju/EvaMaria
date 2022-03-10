@@ -207,7 +207,7 @@ async def start(client, message):
         try:
             buttons = [[
                 InlineKeyboardButton('🧛𝐃𝐞𝐯', url='https://t.me/pushpa_Reju'),
-                InlineKeyboardButton('📂𝐂𝐡𝐚𝐧𝐧𝐞𝐥📂', url='https://t.me/crimebhavani4')
+                InlineKeyboardButton('📂𝐂𝐡𝐚𝐧𝐧𝐞𝐥📂', url='https://t.me/updatechannel_forcrime')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             msg = await client.send_cached_media(
